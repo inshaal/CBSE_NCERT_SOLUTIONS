@@ -14,9 +14,9 @@ def area(a,b,c): #Area of triangle
     sol= (s(s-a)(s-b)(s-c))^0.5
     print sol, "is area of triangle"
 
-a= input("Enter a: ")
-b= input("Enter b: ")
-c= input("Enter c: ")
+a= raw_input("Enter a: ")
+b= raw_input("Enter b: ")
+c= raw_input("Enter c: ")
 
 #Error will come if only a and b are given because python takes the latest definiton of function. so only area of triangle can be calculated.
 
