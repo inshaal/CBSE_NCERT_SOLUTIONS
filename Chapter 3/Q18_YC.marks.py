@@ -12,9 +12,20 @@ class Yourclass:
         print marks
         print name
 
-obj=Yourclass()
+YC=Yourclass(5,"name") #any arguement
+"""
+If command is YC.display()
+the output will be:
 
-'''
-SOLUTION Q18 : If Yourclass.marks then it will give global value and
-If YC.marks then it will give value of object locally not globally!
-'''
+10
+"ABC"
+
+Which means that it will give output as class variables.
+
+If 'print self.marks' and 'print self.name' is in the display(self),
+then the output will be:
+
+5
+"name"
+
+"""
