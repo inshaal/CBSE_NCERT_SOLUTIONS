@@ -14,6 +14,7 @@ a=raw_input("Enter dimension1: ")
 b=raw_input("Enter dimension2: ")
 c=raw_input("Enter dimension3: ")
 #note that these are raw inputs and a the defined function will not work for strings
+#We're using raw_input so that we can check the truth value the strings in the code below
 '''
 Notice Python takes the latest definition of that function. So if all three values are provided for a,b & c Python will give an error
 stating it takes only 2 arguments but 3 given.
