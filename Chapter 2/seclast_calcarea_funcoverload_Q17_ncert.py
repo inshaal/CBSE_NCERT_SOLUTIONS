@@ -20,8 +20,8 @@ c= input("Enter c: ")
 
 #Error will come if only a and b are given because python takes the latest definiton of function. so only area of triangle can be calculated.
 
-'''
-#EXTRA
+'''Below- REQUIRED BECAUSE YOU NEED TO CHECK IF THE FUNCTION HAS GIVEN TWO ARGUEMENTS OR THREE
+-as it's done in C++, Java or other languages that support function overloading'''
 ta= bool(a)
 tb= bool(b)
 tc= bool(c)
@@ -37,6 +37,7 @@ if ta:
         b= float(b)
         c= float(c)
         area(a,b,c)
-'''
+"""Though, you can directly use area(a) and area(a,b) and mention that it will output error that it takes 3 arguements.
+Because the third defitinition of function area(a,b,c) overwrites the previous definitions"""
 
 """It's possible using module/s: https://pypi.python.org/pypi/overload"""
