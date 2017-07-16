@@ -39,7 +39,7 @@ if ta:
         volume(a,b,c)
 
 """
-If the raw_input statements weren't mentioned in the above code. Then it can be simply represented as volume(a,b) or volume(a)
+If the raw_input statements weren't mentioned in the above code. Then it can be simply represented as volume(a,b) or volume(a) [but a and b should be float!]
 and mentioned that this will give out error that the function takes 3 arguements as the function is overwritten by the third definition
 """
 
