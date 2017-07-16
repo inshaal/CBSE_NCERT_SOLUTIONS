@@ -37,7 +37,7 @@ if ta:
         b= float(b)
         c= float(c)
         area(a,b,c)
-"""Though, you can directly use area(a) and area(a,b) and mention that it will output error that it takes 3 arguements.
+"""Though, you can directly use area(a) and area(a,b) [but a and b should be float!] and mention that it will output error that it takes 3 arguements.
 Because the third defitinition of function area(a,b,c) overwrites the previous definitions"""
 
 """It's possible using module/s: https://pypi.python.org/pypi/overload"""
