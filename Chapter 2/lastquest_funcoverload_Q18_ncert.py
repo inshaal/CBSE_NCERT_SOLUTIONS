@@ -20,8 +20,9 @@ Notice Python takes the latest definition of that function. So if all three valu
 stating it takes only 2 arguments but 3 given.
 '''
 
-'''
-EXTRA PART FOR - (Not Required)
+'''Below- REQUIRED BECAUSE YOU NEED TO CHECK IF THE FUNCTION HAS GIVEN TWO ARGUEMENTS OR THREE
+-as it's done in C++, Java or other languages that support function overloading'''
+
 ta=bool(a)
 tb=bool(b)
 tc=bool(c)
@@ -36,8 +37,10 @@ if ta:
         b=float(b)
         c=float(c)
         volume(a,b,c)
-'''
 
-
+"""
+If the raw_input statements weren't mentioned in the above code. Then it can be simply represented as volume(a,b) or volume(a)
+and mentioned that this will give out error that the function takes 3 arguements as the function is overwritten by the third definition
+"""
 
 """It's possible using module/s: https://pypi.python.org/pypi/overload"""
