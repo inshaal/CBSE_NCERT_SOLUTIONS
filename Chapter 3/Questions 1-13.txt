@@ -17,7 +17,8 @@ Local namespace inside a function:
 def function():
 	a=22
 	b=a+1
-The above function will have values of a and b defined only in that region. These get deleted when the function returns or raises an exception that is not handled within the function.
+The above function will have values of a and b defined only in that region. These get deleted when the function
+returns or raises an exception that is not handled within the function.
 
 Global namespace
 a=22
@@ -35,19 +36,28 @@ LEGB= LOCAL ENCLOSED GLOBAL BUILT-IN
 	If the name is not found there, it searches in all enclosing functions.
 	If not, then it searches for the name in Global namespace and finally searches in the BUILT-IN namespace.
 5.
-Objects of a class can be mutable as you can directly assign some new value to that object. And object of a class can be internally mutable as well. You can use built-in methods like "setattr()" or "delattr()" to change, reassign or delete values. You can also add methods.
+Objects of a class can be mutable as you can directly assign some new value to that object.
+And object of a class can be internally mutable as well.
+You can use built-in methods like "setattr()" or "delattr()" to change,
+reassign or delete values. You can also add methods.
 ------------------------------------------------------------------------------------------
 6.
-If a class doesn't contain any statements i.e. it's a class without any attributes, then a keyword 'pass' is given within the body of the class. Giving this keyword means that the class doesn't define any methods or attributes. But a class cannot be empty, that's why 'pass' is given.
+If a class doesn't contain any statements i.e. it's a class without any attributes,
+then a keyword 'pass' is given within the body of the class.
+Giving this keyword means that the class doesn't define any methods or attributes.
+But a class cannot be empty, that's why 'pass' is given.
 ------------------------------------------------------------------------------------------
 7.
-__init__ is a constructor, a special method that is used to initialize the data members of a class. __init__ is a built in method in Python. It's teh first method defined for the class and is the first piece of code executed in a newly created instance of this class. It is called as soon as an instance is created.
+__init__ is a constructor, a special method that is used to initialize the data members of a class.
+__init__ is a built in method in Python. It's teh first method defined for the class and is the first piece of code
+executed in a newly created instance of this class. It is called as soon as an instance is created.
  Example:
  class CLASS:
  	def __init__(self,name="XYZ") #default name is xyz
  		self.name=name
  A=CLASS("classname")
-Here, as soon as the instantiation of the object A takes place, init is called and the arguement "classname" is assigned to the 'name' value of instance.
+Here, as soon as the instantiation of the object A takes place, init is called
+and the arguement "classname" is assigned to the 'name' value of instance.
 ------------------------------------------------------------------------------------------
 8.
 Importance of self
@@ -55,7 +65,8 @@ Importance of self
 ------------------------------------------------------------------------------------------
 9.
 Class attributes are attributes for a class. For a defined class attribute if its value is changed using any instance of the same class, it's value is changed for all the instances for the class.
-Instance attributes are attributes of individual instances. These can be changed specifically for a given instance. Instance attributes are specific properties for an object.
+Instance attributes are attributes of individual instances.
+These can be changed specifically for a given instance. Instance attributes are specific properties for an object.
 Example:
 class A:
 	a=[]
@@ -95,13 +106,20 @@ print B
 This will give output "A is 2"
 ------------------------------------------------------------------------
 11.
-	Name mangling is making a member of a class private or hidden by adding two underscores before and not more than 1 underscore after the name of the member. On encountering mangled attributes or methods, Python transforms these names by a single underscore and the name of the enclosing class.
-	Example: If __func() is a method inside class Apple. The list dir(Apple) will have a member "_Apple__func()" instead of "__func()".
+	Name mangling is making a member of a class private or hidden by
+	adding two underscores before and not more than 1 underscore after the name of the member.
+	On encountering mangled attributes or methods, Python transforms these names by a single underscore and
+	the name of the enclosing class.
+	Example: If __func() is a method inside class Apple.
+	The list dir(Apple) will have a member "_Apple__func()" instead of "__func()".
 	Making a member private means that the member should be used only inside the class.
 ---------------------------------------------------------------------------
 12.
 	Referrence count of an object is number of times a reference of that object is made by other objects. Python's garbage collector triggers only when this reference count reaches zero.
-	Automatic Garbage Collection is a scheduled garbage collection. Python schedules garbage collection based upon a threshold of object allocations and de-allocations. Python identifies the unrequired objects and deletes them through the process of garbage collection. These objects may be built-in types or class instances.
+	___________
+	Automatic Garbage Collection is a scheduled garbage collection.
+	Python schedules garbage collection based upon a threshold of object allocations and de-allocations.
+	Python identifies the unrequired objects and deletes them through the process of garbage collection. These objects may be built-in types or class instances.
 -----------------------------------------------------------------------------
 13.
 	i) Defining a method and adding it to the class.
