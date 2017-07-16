@@ -12,4 +12,4 @@ class Yourclass:
         print marks
         print name
 
-obj=Yourclass() #THIS IS THE MISSING STATEMENT.
+obj=Yourclass(10,"ABC") #THIS IS THE MISSING STATEMENT.
