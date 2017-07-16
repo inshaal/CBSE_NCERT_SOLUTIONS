@@ -13,3 +13,5 @@ class Yourclass:
         print name
 
 obj=Yourclass(10,"ABC") #THIS IS THE MISSING STATEMENT.
+#or
+obj=Yourclass
